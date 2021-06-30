@@ -3,7 +3,7 @@
 {
     "version": "1.2.1", // 配置文件版本,严禁修改
     "http_header": {    // http头部，访问B站时使用  注:User-Agent建议改为常用的浏览器ua(下面是google浏览器)，其他的不改
-    	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Edge/78.0.3904.108 Safari/537.36",
+    	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko)Chrome/78.0.3904.108 Safari/537.36",
     	"Referer": "https://www.bilibili.com/",
     	"Connection": "keep-alive"
     },
@@ -30,7 +30,7 @@
             "medal_room": true,       // 在所有拥有粉丝牌的直播间心跳，值为true或false分别代表开启和关闭，只有在有粉丝牌的房间心跳才能获取小心心(时间累加多个房间,没有开播也累加)
             "live_status": [0, 1, 2], // 只在指定状态的直播间心跳，值为整数数组，0为未开播，1为正在直播，2为轮播
             "room_id": [21304638,15152878,795101656,21402309,21130785,14917277,12235923,22989215],            // 直播间id，值为整数数组，除了上面的拥有粉丝牌的直播间还可以在其他直播间心跳
-            "send_msg": "嗷呜",           // 向所有有粉丝牌的房间发送消息(作用是点亮粉丝牌和增加其密度)，值为字符串，为空字符串则不发送
+            "send_msg": "1",           // 向所有有粉丝牌的房间发送消息(作用是点亮粉丝牌和增加其密度)，值为字符串，为空字符串则不发送
             "timeout": 150,            // 心跳分钟数，值为数字(单位分钟,允许小数),心跳的时间，达到时间退出
         },
         "xlive_anchor_task": {   // 任务:参与直播天选时刻，下面为本功能详细配置
@@ -254,8 +254,8 @@
     "log_console": false,         // 是否把日志输出到控制台
     "users": [{                 //账户数组，每个账户包含一个cookieDatas和tasks参数，使用actions的用户可以使用secrets(biliconfig)指定cookie而不用本参数
         "cookieDatas": {        // cookie获取方式见项目说明
-            "SESSDATA": "9b8a4a0e%2C1631794419%2C12a8c%2A31",
-            "bili_jct": "97b4b494d62bcccef7515cc2e27e1cdf",
+            "SESSDATA": "44383083%2C1628079988%2C8dc97%2A21",
+            "bili_jct": "eb444dea2fff37265d64072aa8aa98ec",
             "DedeUserID": "510539972"
         },
         "show_name": "", /* 昵称，用于日志，消息推送，填空则默认使用账号昵称，在actions上不想显示真实昵称时使用
