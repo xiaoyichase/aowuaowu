@@ -906,7 +906,7 @@ class asyncBiliApi(object):
             "csrf_token": self._bili_jct,
             "csrf": self._bili_jct,
             }
-        enc_server = 'https://1578907340179965.cn-shanghai.fc.aliyuncs.com/2016-08-15/proxy/bili_server/heartbeat/'
+        enc_server = 'http://heartbeat-1.mudew.com:3000/enc'
         async with self._session.post(enc_server, json={"t":post_data,"r":secret_rule}, verify_ssl=False) as r:
             post_data["s"] = await r.text()
 
